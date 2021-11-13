@@ -4,9 +4,10 @@ include(FetchContent)
 
 project(coding_dojo LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
-
+set(CMAKE_CXX_FLAGS "-Ofast -march=native -g0")
 add_library(dojolib
     src/file1.cpp
+    src/fizzbuzz.cpp
 )
 target_include_directories(dojolib PUBLIC include)
 
