@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-while sleep 1
+while sleep 5
 do
-    ctest
+    cmake --build . --target dojotest && cmake --build . && ctest
 done
